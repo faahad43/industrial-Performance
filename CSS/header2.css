@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Righteous&family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&display=swap');
+
+
+header{
+    padding: 1rem 2rem;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    justify-content:space-between;
+    font:1rem;
+    color:#555555;
+    background-color:transparent;
+    transition:background-color 0.4s ease-in-out;
+    position: fixed;
+    top:0; 
+    width: 97%;
+    z-index: 999;
+}
+.scrolled{
+    background-color:#fff;
+}
+.scrolled .header-right .navbar .navbar-components a{
+    color: #555555;
+}
+.logo{
+    width: 4rem;
+    height: 100%;
+    flex:2;
+}
+.logo img{
+    width: 75px;
+    height: 50px;
+}
+.header-right{
+    display: flex;
+    flex: 2;
+    justify-content: space-between;
+}
+.navbar{
+    flex:2;
+}
+.navbar-components{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+.navbar-components a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: 500;
+    transition: .5s ease;
+}
+.navbar-components a:hover{
+    font-size:1.1rem ;
+    color:#1888eb;
+}
+.h-right-icons{
+    display: flex;
+    flex:1;   
+    justify-content: right;
+    align-items: center;
+}
+.humburger{
+    display: flex;
+    flex-direction: column;
+    gap:3px;
+    padding-left:1rem;
+    display:none;
+}
+.humburger span{
+    width:3rem;
+    height: 8px;
+    background: orange;
+    border-radius: 5px;
+}
