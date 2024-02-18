@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Righteous&family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&display=swap');
+
+:root{
+    --heading:#113946;
+    --text:#6C5F5B;
+    --heading-color:#fff;
+    --text-color-2:#3F2305;
+    --heading-font:Roboto;
+    --background:linear-gradient( 270.3deg,  rgb(124, 62, 172) 0.2%, rgb(71, 62, 172) 60%, rgb(43, 120, 171) 100% );
+    /* --background:linear-gradient(120deg,#958E69 5%,#695027 40%,#000e 95%) ; */
+}
+
+body{
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+section{
+    margin: 0 auto;
+    margin-top: 7rem;
+    max-width: 90vw;
+    justify-content: center;
+}
+.contact-title{
+    width: 70vw;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.contact-title h1{
+    margin-bottom: 0;
+}
+.contact-title p{
+    margin-top: 0.3rem;
+    font-size: 15px;
+}
+input, select,textarea {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  } 
+.contact-side h2{
+    margin-bottom: 0;
+}
+.contact-side p{
+    margin-top: 0.1rem;
+}
+.contact-form{
+    width: 100%;
+}
+
+.contact-form *:not(.checkbox){
+    width: 90%;
+    margin-top:0.7rem ;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,.4);
+    outline: none;
+}
+textarea{
+    resize: none;
+    font-family: poppins;
+}
+.checkbox{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+.check{
+    flex: 0.1;
+}
+.check-label{
+    border: none !important;
+    flex:3;
+    font-size: 13px;
+}
+
+.maps-container{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: #113946;
+    margin: 4rem auto;
+}
