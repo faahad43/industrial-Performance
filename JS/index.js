@@ -166,9 +166,12 @@ function closeClick(modalid){
     modal.style.display="none";
 
 }
-  
+var modals =document.querySelectorAll(".modal");
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
+    modals.forEach((modal)=>{
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    })
+ 
 }

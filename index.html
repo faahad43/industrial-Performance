@@ -162,7 +162,7 @@
                         <p>Une démarche d’excellence opérationnelle afin de pérenniser les gains.</p>
                     </div>
                 </div>
-                <div class="approach-step fade-up page-load-up" style="transition: 2.2Rs ease;">
+                <div class="approach-step fade-up page-load-up" style="transition: 2.2s ease;">
                     <div class="approach-heading" style="border-color: #829460;">
                         <h3>IMPLÉMENTER</h3>
                     </div>
@@ -175,90 +175,7 @@
     </section>
     <!--new Approach section end -->
 
-    <!-- Approach section -->
-    <!-- <section class="section approach">
-        <div class="approach-header">
-            <h2 class="fade-in page-load">NOTRE APPROCHE</h2>
-            <p class="fade-in page-load">Complete and collaborative support, to optimize your industrial performance in a healthy and sustainable manner.</p>
-        </div>
-        <div class="approach-figures ">
-            <div class="approach-fig reverse">
-                <div class="free-space">
-
-                </div>
-                <div class="approach-gear ">
-                    <img src="./Resources/svg/1.svg" alt="">
-                </div>
-                <div class="approach-text fade-out page-load">
-                    <h3>RÉALISER</h3>
-                    <p>Un diagnostic en performance industrielle et chiffrer les gains potentiels d’accompagnement.</p>
-                </div>
-            </div>
-            <div class="approach-fig">
-                <div class="free-space">
-
-                </div>
-                <div class="approach-gear invert-img">
-                    <img src="./Resources/svg/2.svg" alt="">
-                </div>
-                <div class="approach-text fade-in page-load">
-                    <h3>PROPOSER</h3>
-                    <p>Un plan d’accompagnement pour définir le planning des chantiers à mener et leurs objectifs.</p>
-                </div>
-            </div>
-            <div class="approach-fig reverse">
-                <div class="free-space ">
-
-                </div>
-                <div class="approach-gear">
-                    <img src="./Resources/svg/3.svg" alt="">
-                </div>
-                <div class="approach-text fade-out page-load">
-                    <h3>MENER</h3>
-                    <p>Des chantiers Quick win pour des gains rapides valorisant et motivant les équipes.</p>
-                </div>
-            </div>
-            <div class="approach-fig">
-                <div class="free-space">
-
-                </div>
-                <div class="approach-gear">
-                    <img src="./Resources/svg/4.svg" alt="">
-                </div>
-                <div class="approach-text fade-in page-load">
-                    <h3>COACHER</h3>
-                    <p>L’encadrement dans le management des équipes pour une performance décuplée. </p>
-                </div>
-            </div>
-            <div class="approach-fig reverse">
-                <div class="free-space">
-
-                </div>
-                <div class="approach-gear">
-                    <img src="./Resources/svg/5.svg" alt="">
-                </div>
-                <div class="approach-text fade-out page-load">
-                    <h3>DÉPLOYER</h3>
-                    <p>Une démarche d’excellence opérationnelle afin de pérenniser les gains.</p>
-                </div>
-            </div>
-            <div class="approach-fig">
-                <div class="free-space">
-
-                </div>
-                <div class="approach-gear">
-                    <img src="./Resources/svg/6.svg" alt="">
-                </div>
-                <div class="approach-text fade-in page-load">
-                    <h3>IMPLÉMENTER</h3>
-                    <p>Un outil connecté dédié au pilotage collaboratif de la performance.</p>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    
-    <!-- Approach section -->
+   
 
     <!-- Tools section -->
     <section class="Tools-section">
@@ -389,28 +306,125 @@
             </div>
             <div class="client-trust-cards">
                 <div class="fade-up page-load-up client-trust-card">
-                    <div class="card-animation"></div>
                     <h3>Alain DUCAMP</h3>
                     <em>Founder and President - Océan Délices</em>
                     <p>Entreprise agroalimentaire spécialisée dans la conception et la fabrication de produits</p>
-                    <button class="client-btn">Read more</button>
+                    <button class="modal-btn" id="modal-btn1" onclick="modalClick('modal1')">Read more</button>
                 </div>
+               
                 <div class="fade-up page-load-up  client-trust-card">
-                    <div class="card-animation" ></div>
                     <h3>CHRISTIAN DELAVAUX</h3>
                     <em>-Lunor</em>
                     <p>In a context of distrust among the teams, due to the inappropriate intervention of a previous</p>
-                    <button class="client-btn">Read more</button>
+                    <button class="modal-btn" id="modal-btn2" onclick="modalClick('modal2')">Read more</button>
                 </div>
+                
                 <div class="fade-up page-load-up  client-trust-card">
                     <div class="card-animation" ></div>
                     <h3>Olivier PETIT</h3>
                     <em>National Production Director KP1 - Terreal</em>
                     <p>As Director of the Terreal Chagny factory, I called on Mr. Luis VALOY on several occasions to help me </p>
-                    <button class="client-btn">Read more</button>
+                    <button class="modal-btn" id="modal-btn3" onclick="modalClick('modal3')">Read more</button>
                 </div>
+                
             </div>
         </div>
+        <!-- modal -->
+        <!-- modal 1 -->
+        <div class="modal" id="modal1">
+            <div class="modal-content">
+                <div class="modal-img">
+                    <img  src="./Resources/brandlogo6.png" alt="">
+                </div>
+                <div class="modal-details">
+                    <h3>Alain DUCAMP</h3>
+                    <em>Founder and President - Océan Délices</em>
+                    <textarea>I called on LUIS VALOY on the recommendation of a colleague who had used his skills in his company and obtained excellent results in improving his productivity.
+
+Our company needed to review its production methods, reduce an excessively large workforce, and reduce an absenteeism rate of 19% following the merger of another entity of the family holding company.
+
+The engineers followed workshop-by-workshop training and quickly saw the benefits of implementing LEAN
+
+After a year of work, we have significantly reduced staff, obtained a gain on the payroll of two percent and reduced the absenteeism rate to 6%.
+
+We are continuing work with LUIS VALOY as part of the overhaul of our organization chart following the departure of our production manager and are launching a machine investment plan to complete the work carried out and reduce the number of temporary workers.
+                    </textarea>
+                </div>
+                <span class="close" onclick="closeClick('modal1')">&times;</span>
+                
+            </div>
+        </div>
+        <!-- model1 end-->
+
+        <!-- modal2 -->
+        <div class="modal" id="modal2">
+            <div class="modal-content">
+                <div class="modal-img">
+                    <img  src="./Resources/brandlogo6.png" alt="">
+                </div>
+                <div class="modal-details">
+                    <h3>CHRISTIAN DELAVAUX</h3>
+                    <em>-Lunor</em>
+                    <textarea>
+Dans un contexte de défiance des équipes, dû à l’intervention inadaptée d’un précédent cabinet conseils ; Dimitri a su gagner la confiance de ses interlocuteurs : responsable de site, responsables d’atelier, chefs d’équipes, opérateurs. Dimitri adapte son mode d’action et de communication en fonction de chacun de ses interlocuteurs, c’est un facteur clef de réussite.
+
+Il a formé les équipes au LEAN MANUFACTURING, les a coachés dans l’application de leurs nouvelles méthodes de travail ; ceci avec une approche terrain très pragmatique.
+
+Entre les jours d’interventions en présentiel, Dimitri s’est montré disponible au téléphone pour répondre aux questions et s’assurer du suivi et des résultats des nouvelles méthodes de travail.
+
+Il nous a aidé à détecter les potentiels parmi nos équipes et optimiser le positionnement de chacun dans ses missions prioritaires.
+
+En un an, la productivité de notre atelier d’emballage s’est améliorée de plus de 20% (grâce à l’intervention de Dimitri et à des investissements) ; ces bons résultats se poursuivent avec une nouvelle amélioration de 4% la deuxième année grâce aux méthodes acquises par les équipes et à l’autonomie acquise par le responsable d’atelier.
+
+Dimitri est intervenu deux fois sur notre atelier de transformation, après un premier chantier pilote, la démarche a été généralisée. Le TRS et la productivité se sont améliorés de plus de 25%,
+
+Ces évolutions ont été obtenues dans un bon climat social, les résultats qualité et sécurité se sont également améliorés.
+
+Le payback des missions de VALOY CONSEILS est de moins d’un an.
+
+Je recommande donc sans réserve Dimitri BARRANGER dans les missions d’améliorations de performances industrielles.
+                    </textarea>
+                </div>
+                <span class="close" onclick="closeClick('modal2')">&times;</span>
+                
+            </div>
+        </div>
+        <!-- modal2 end-->
+
+        <!-- modal3 -->
+        <div class="modal" id="modal3" >
+            <div class="modal-content">
+                <div class="modal-img">
+                    <img  src="./Resources/brandlogo6.png" alt="">
+                </div>
+                <div class="modal-details">
+                    <h3>CHRISTIAN DELAVAUX</h3>
+                    <em>-Lunor</em>
+                    <textarea>
+Dans un contexte de défiance des équipes, dû à l’intervention inadaptée d’un précédent cabinet conseils ; Dimitri a su gagner la confiance de ses interlocuteurs : responsable de site, responsables d’atelier, chefs d’équipes, opérateurs. Dimitri adapte son mode d’action et de communication en fonction de chacun de ses interlocuteurs, c’est un facteur clef de réussite.
+
+Il a formé les équipes au LEAN MANUFACTURING, les a coachés dans l’application de leurs nouvelles méthodes de travail ; ceci avec une approche terrain très pragmatique.
+
+Entre les jours d’interventions en présentiel, Dimitri s’est montré disponible au téléphone pour répondre aux questions et s’assurer du suivi et des résultats des nouvelles méthodes de travail.
+
+Il nous a aidé à détecter les potentiels parmi nos équipes et optimiser le positionnement de chacun dans ses missions prioritaires.
+
+En un an, la productivité de notre atelier d’emballage s’est améliorée de plus de 20% (grâce à l’intervention de Dimitri et à des investissements) ; ces bons résultats se poursuivent avec une nouvelle amélioration de 4% la deuxième année grâce aux méthodes acquises par les équipes et à l’autonomie acquise par le responsable d’atelier.
+
+Dimitri est intervenu deux fois sur notre atelier de transformation, après un premier chantier pilote, la démarche a été généralisée. Le TRS et la productivité se sont améliorés de plus de 25%,
+
+Ces évolutions ont été obtenues dans un bon climat social, les résultats qualité et sécurité se sont également améliorés.
+
+Le payback des missions de VALOY CONSEILS est de moins d’un an.
+
+Je recommande donc sans réserve Dimitri BARRANGER dans les missions d’améliorations de performances industrielles.
+                    </textarea>
+                </div>
+                <span class="close" onclick="closeClick('modal3')">&times;</span>
+                
+            </div>
+        </div>
+        <!-- modal3 end-->
         <div class="trust-area">
             <div class="fade-left page-load-left trust-area-title">
                 <p>DANS LE SECTEUR</p>
@@ -538,52 +552,11 @@
 
     <!-- Footer section end -->
 
-        <!-- header -->
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                const header = document.querySelector('.header');
-        
-                if (header) {
-                    window.addEventListener('scroll', () => {
-                        if (window.scrollY > 0) {
-                            header.classList.add('scrolled');
-                        } else {
-                            header.classList.remove('scrolled');
-                        }
-                    });
-                }
-            });
-        </script>
+       
 
         <!-- tilt -->
         <script src="vanilla-tilt.js"></script>
-
-        <!-- for faq -->
-        <script>
-            function faqclick(id,panelid) {
-                const faq = document.getElementById(id);
-                const panel = document.getElementById(panelid);
-                faq.classList.toggle("accordion-click");
-                panel.classList.toggle("pannel-click");
-            }
-        </script>
-        <script>
-            var acc = document.getElementsByClassName("accordion");
-            var i;
-            
-            for (i = 0; i < acc.length; i++) {
-              acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                  panel.style.display = "none";
-                } else {
-                  panel.style.display = "block";
-                }
-              });
-            }
-            </script>
-
+        
         <!-- for slider -->
         <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
@@ -595,33 +568,33 @@
                 arrows:true,
                 autoplay:true,
                 autoplaySpeed:2000,
-                infinite:true
+                infinite:true,
+                responsive: [
+                {
+                breakpoint:1520,
+                settings:{
+                    slidesToShow:3
+                }
+                },
+                {
+                breakpoint: 1024, // Medium-sized devices (tablets, landscape phones)
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+                },
+                {
+                breakpoint: 711, // Small devices (landscape phones)
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+                }
+                ]
             })
         </script>
-        <!-- for tools section -->
-        <!-- <script>
-            $(window).scroll(function(){
-                var $window = $(window),
-                    $body = $(".Tools-section"),
-                    $panel = $(".tool"),
-                    $toolImg = $(".tool-img img"); // Select the tool-pic image element
-            
-                var scroll = $window.scrollTop() + ($window.height() / 3);
-                $panel.each(function(){
-                    var $this = $(this);
-                    if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll){
-                        $body.removeClass(function(index, css){
-                            return (css.match(/(^|\s)color-\S+/g) || []).join(' ');
-                        });
-                        $body.addClass('color-' + $(this).data('color'));
-                        
-                        // Set the source of the tool-pic image to the respective div's image source
-                        $toolImg.attr("src", $this.find(".tool-img img").attr("src"));
-                    }
-                });
-            }).scroll();
-        </script> -->
-        <!-- tool section js end -->
+       
+        <script type="text/javascript" src="vanilla-tilt.js"></script>
         <script src="./JS/index.js"></script>
     </body>
 </html>

@@ -22,6 +22,9 @@ header{
 .scrolled .header-right .navbar .navbar-components a{
     color: #555555;
 }
+.scrolled .header-right .navbar .navbar-components a:hover{
+    color: #1888eb;
+}
 .logo{
     width: 4rem;
     height: 100%;
@@ -59,6 +62,7 @@ header{
     flex:1;   
     justify-content: right;
     align-items: center;
+    padding-right: 1.5rem;
 }
 .humburger{
     display: flex;
@@ -69,7 +73,24 @@ header{
 }
 .humburger span{
     width:3rem;
-    height: 8px;
-    background: orange;
+    height: 7px;
+    background: linear-gradient(120deg,#958E69 5%,#695027 40%,rgba(70, 39, 12, 0.73) 95%) ;
     border-radius: 5px;
+}
+
+@media  screen  and (max-width: 1050px){
+    .navbar{
+        display: none;
+    }
+    .humburger{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+@media screen and (max-width: 1187px) {
+   .header-right{
+    flex:6;
+   }
+   
 }
