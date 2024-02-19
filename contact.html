@@ -9,13 +9,15 @@
 
     <!-- linking css file -->
     <link rel="stylesheet" href="./CSS/contact.css">
-    <link rel="stylesheet" href="./CSS/header2.css">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/animation.css">
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/5bc4067c57.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header" style="background-color: brown;">
+    <header class="header" >
         <div class="logo">
             <img src="./Resources/logo.webp" alt="company logo">
         </div>
@@ -43,7 +45,7 @@
     </header>
      <!-- contact us section -->
 
-    <section>
+    <section class="contact-section">
         <div class="contact-title">
             <h1>Contact Us</h1>
             <p>
@@ -56,13 +58,21 @@
                     <h2>Need Support</h2>
                      <p>Feel free to us your message</p>
                 </div>
-                <form action="" class="contact-form">
-                    <input type="text" class="name" placeholder="Your name"/>
-                    <input type="text" class="first-name" placeholder="First Name"/>
-                    <input type="text" class="business" placeholder="Business ">
-                    <input type="email" class="email" placeholder="Email"/>
-                    <input type="tel" class="phone-no" placeholder="Phone Number"/>
-                    <select name="fucntion" id="" class="function" placeholder="Function" required>
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+
+                    <input type="hidden" name="access_key" value="ecd19571-9974-43fe-9e71-f2472e5bf229">
+
+                    <input type="text" name="Name" class="name" placeholder="Your name" required/>
+
+                    <input type="text" name="First name" class="first-name" placeholder="First Name" required/>
+
+                    <input type="text" name="Business" class="business" placeholder="Business" required>
+
+                    <input type="email" name="Email" class="email" placeholder="Email" required/>
+
+                    <input type="tel" name="phone Number" class="phone-no" placeholder="Phone Number" required/>
+
+                    <select name="Fucntion" id="" class="function" placeholder="Function" required>
                         <option value="" disabled selected>Fucntion</option>
                         <option value="1">Directeur industrial</option>
                         <option value="2">Directeur des operation</option>
@@ -70,26 +80,64 @@
                         <option value="4">Gerant</option>
                         <option value="5">Autre</option>
                     </select>
-                    <select name="effective" id="effective" class="effective" placeholder="Effective">
+
+                    <select name="Effective" id="effective" class="effective" placeholder="Effective" required>
                         <option value="" disabled selected>Effective</option>
-                        <option value="">1-19</option>
-                        <option value="">20-49</option>
-                        <option value="">50-99</option>
-                        <option value="">100-500</option>
-                        <option value=""> >500 +</option>
+                        <option value="1-19">1-19</option>
+                        <option value="20-49">20-49</option>
+                        <option value="50-99">50-99</option>
+                        <option value="100-500">100-500</option>
+                        <option value="500 +"> >500 +</option>
                     </select>
-                    <textarea name="message" id="" placeholder="Enter your message here"></textarea>
+
+                    <textarea name="Message" id="" placeholder="Enter your message here" required></textarea>
+
                     <label class="checkbox">
                         <input type="checkbox" id="checkox" class="check" required>
                         <span for="checkbox" class="check-label">J'ai pris connaissance de la politique de gestion des données personnelles décrite dans les mentions légales et j'autorise Valoy Conseil a m'envoyer des informations en relation avec les produits et les services de l'entreprise.</span>
                     </label>
+
                     <button type="submit" value="submit" class="form-submit">Submit</button>
                 </form>
             </div>
 
             <div class="maps-container">
                 <div class="mapbg"></div>
-                <div class="maps"></div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2667.813599149493!2d2.711736176182708!3d48.03662677123256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e57f070ec5f35b%3A0x9915d36feeeedc63!2sValoy%20Conseil%20-%20Conseil%20en%20performance%20industrielle!5e0!3m2!1sen!2s!4v1708347448964!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="contact-method">
+                <div class="method">
+                    <i class="fa-solid fa-location-dot contact-icon"></i> 
+                    <article class="text">
+                        <h1>
+                            Location
+                        </h1>
+                        <p>83 rule du 8 mia</p>
+                    </article>
+                </div>
+
+                <div class="method">
+                    <i class="fa-solid fa-phone contact-icon"></i>
+                    <article class="text">
+                        <h1>
+                            Phone
+                        </h1>
+                        <p>06.60.81.56.49</p>
+                    </article>
+                </div>
+
+                <div class="method">
+                    <i class="fa-solid fa-envelope contact-icon"></i>
+                    <article class="text">
+                        <h1>
+                            Email
+                        </h1>
+                        <p>luis.valoy@valoy-conseil.fr</p>
+                    </article>
+                </div>
             </div>
 
         </div>
@@ -97,6 +145,7 @@
 
     </section>
 
-   
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+   <script src="./JS/index.js"></script>
 </body>
 </html>

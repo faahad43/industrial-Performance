@@ -127,28 +127,28 @@ document.addEventListener("DOMContentLoaded",()=>{
 
 
 // Faq section for button click
-function faqclick(id,panelid) {
-    const faq = document.getElementById(id);
-    const panel = document.getElementById(panelid);
-    faq.classList.toggle("accordion-click");
-    panel.classList.toggle("pannel-click");
-}
+// function faqclick(id,panelid) {
+//     const faq = document.getElementById(id);
+//     const panel = document.getElementById(panelid);
+//     faq.classList.toggle("accordion-click");
+//     panel.classList.toggle("pannel-click");
+// }
 
 // for panel display
-var acc = document.getElementsByClassName("accordion");
-var i;
+// var acc = document.getElementsByClassName("accordion");
+// var i;
 
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-        panel.style.display = "none";
-    } else {
-        panel.style.display = "block";
-    }
-    });
-}
+// for (i = 0; i < acc.length; i++) {
+//     acc[i].addEventListener("click", function() {
+//     this.classList.toggle("active");
+//     var panel = this.nextElementSibling;
+//     if (panel.style.display === "block") {
+//         panel.style.display = "none";
+//     } else {
+//         panel.style.display = "block";
+//     }
+//     });
+// }
     
 
 
@@ -174,4 +174,21 @@ window.onclick = function(event) {
         }
     })
  
+}
+
+// faq section
+
+var acc = document.querySelectorAll(".accordion");
+var acc_len = acc.length;
+for (var i = 0; i < acc_len; i++) {
+    acc[i].addEventListener('click', function(){
+        this.classList.toggle('active');
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        }
+        else {
+            panel.style.maxHeight = panel.scrollHeight + 'px';
+        }
+    })
 }

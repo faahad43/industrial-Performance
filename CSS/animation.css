@@ -1,0 +1,70 @@
+/* ------------------------------------------------ */
+
+/* animations */
+.page-load-up{
+    transform: translateY(40px);
+    opacity: 0;
+    transition: .7s ease;
+}
+.fade-up{
+    transform: translateY(40px);
+    opacity: 0;
+    transition: .7s ease;
+}
+.fade-up--visible{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+.page-load-down{
+    transform: translateY(-40px);
+    opacity: 0;
+    transition: .7s ease;
+}
+.fade-down{
+    transform: translateY(-40px);
+    opacity: 0;
+    transition: .7s ease;
+}
+.fade-down--visible{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+.fade-left{
+    transform: translateX(-40px);
+    opacity: 0;
+    transition: .7s ease;
+}
+.page-load-left{
+    transform: translateX(-40px);
+    opacity: 0;
+    transition: .7s ease;
+}
+.fade-left--visible{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+.fade-right {
+    transform: translateX(40px); /* Adjust the initial translation to the right */
+    opacity: 0;
+    transition: .7s ease;
+}
+
+.page-load-right {
+    transform: translateX(40px); /* Adjust the initial translation to the right */
+    opacity: 0;
+    transition: .7s ease;
+}
+
+.fade-right--visible {
+    transform: translateX(0); /* Keep the opacity 1 */
+    opacity: 1;
+}
+
+/* animation end */
