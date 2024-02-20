@@ -278,3 +278,36 @@ body{
         font-size: 2rem;
     }
 }
+
+
+
+/* -----------------About Opearations------------------------ */
+.operation{
+    
+    margin: 0 auto;
+}
+.operation-content{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    
+}
+.operation-img{
+    display: flex;
+    justify-content: center;
+}
+.operation-img img{
+    width:85%;
+    height: 80%;
+    object-fit: cover;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+
+.imp-step2 img{
+    width:85%;
+    height: 80%;
+    object-fit: cover;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
