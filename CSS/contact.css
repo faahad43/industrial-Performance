@@ -2,14 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&display=swap');
 
 :root{
-    --heading:#113946;
+    --heading:#720dbf;
     --text:#6C5F5B;
     --heading-color:#fff;
     --text-color-2:#3F2305;
     --heading-font:Roboto;
+    --heading-desc:#3640b7;
+    --white-text:#eee;
     --background:linear-gradient( 270.3deg,  rgb(124, 62, 172) 0.2%, rgb(71, 62, 172) 60%, rgb(43, 120, 171) 100% );
-    /* --background:linear-gradient(120deg,#958E69 5%,#695027 40%,#000e 95%) ; */
 }
+
 
 body{
     margin: 0;
@@ -31,10 +33,16 @@ body{
 }
 .contact-title h1{
     margin-bottom: 0;
+    color: var(--heading);
+    font-size:2rem;
+    font-family: var(--heading-font);
 }
 .contact-title p{
     margin-top: 0.3rem;
     font-size: 15px;
+    color:var(--heading-desc);
+    font-weight: 500;
+    font-family: var(--heading-font);
 }
 input, select,textarea {
     box-sizing: border-box;
@@ -43,9 +51,15 @@ input, select,textarea {
   } 
 .contact-side h2{
     margin-bottom: 0;
+    color: var(--heading);
+    font-family: var(--heading-font);
 }
 .contact-side p{
-    margin-top: 0.1rem;
+    margin-top: 0.4rem;
+    color:var(--heading-desc);
+    font-weight: 500;
+    font-family: var(--heading-font);
+
 }
 .contact-form{
     width: 100%;
@@ -77,6 +91,12 @@ textarea{
     border: none !important;
     flex:3;
     font-size: 13px;
+}
+.form-submit{
+    background: var(--background);
+    outline: none;
+    border:0;
+    color:var(--white-text)
 }
 
 .maps-container{
@@ -119,7 +139,11 @@ iframe{
 .text h1,p{
     margin: 0;
 }
+.text h1{
+    color: var(--heading-desc);
+}
 .contact-icon{
     font-size: 1.2rem;
-    color: #1f5ed4;
+    color: var(--heading-desc);
+    font-family: var(--heading-font);
 }

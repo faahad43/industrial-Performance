@@ -17,28 +17,41 @@
     <script src="https://kit.fontawesome.com/5bc4067c57.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Header section-->
     <header class="header" >
-        <div class="logo">
-            <img src="./Resources/logo.webp" alt="company logo">
-        </div>
-        
-        <div class="header-right">
-            <div class="navbar">
-                <ul class="navbar-components">
-                    <li><a href="/">About</a></li>
-                    <li><a href="">Our expertise</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>
+        <div class="main-bar">
+            <div class="logo">
+                <a href="/"><img src="./Resources/logo.webp" alt="company logo"></a>
             </div>
-            <div class="h-right-icons">
-                <img src="./Resources/svg/linkedin.svg" alt="" class="linkedin-logo">
-                <div class="humburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+            
+            <div class="header-right">
+                <div class="navbar">
+                    <ul class="navbar-components">
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="./expertise.html">Our expertise</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="h-right-icons">
+                    <img src="./Resources/svg/linkedin.svg" alt="" class="linkedin-logo">
+                    <div class="toggle-btn">
+                        <div class="xmark" id="xmark">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <div class="humburger" id="humburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="dropdown-menu">
+            <li><a href="/about.html">About</a></li>
+            <li><a href="./expertise.html">Our expertise</a></li>
+             <li><a href="./contact.html">Contact</a></li>
         </div>
 
        
@@ -97,7 +110,8 @@
                         <span for="checkbox" class="check-label">J'ai pris connaissance de la politique de gestion des données personnelles décrite dans les mentions légales et j'autorise Valoy Conseil a m'envoyer des informations en relation avec les produits et les services de l'entreprise.</span>
                     </label>
 
-                    <button type="submit" value="submit" class="form-submit">Submit</button>
+                    <button type="submit" value="submit" class="form-submit" style="outline: none;
+                    border:0;">Submit</button>
                 </form>
             </div>
 

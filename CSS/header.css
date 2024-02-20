@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&display=swap');
 
 :root{
-    --heading:#113946;
+    --heading:#8e41f3;
     --text:#6C5F5B;
     --heading-color:#fff;
     --text-color-2:#3F2305;
@@ -13,16 +13,19 @@
 header{
     padding: 1rem 2rem 1rem 1rem;
     display: flex;
+    flex-direction: column;
     font-family: "Poppins", sans-serif;
     justify-content:space-between;
     font:1rem;
-    color:#555555;
     background-color:transparent;
     transition:background-color 0.4s ease-in-out;
     position: fixed;
     top:0; 
     width: 97%;
     z-index: 999;
+}
+.main-bar{
+    display: flex;
 }
 .scrolled{
     background-color:#fff;
@@ -84,6 +87,53 @@ header{
     height: 7px;
     background: var(--background);
     border-radius: 5px;
+
+}
+
+/* ----------Responsive--------------------- */
+.dropdown-menu li{
+    list-style: none;
+}
+.dropdown-menu a{
+    text-decoration: none;
+    color: #fff;
+    transition:0.3s ease;
+}
+.dropdown-menu a:hover{
+    color: #082f52;
+    font-size:1.1rem ;
+}
+.dropdown-menu{
+    position: absolute;
+    top:5.4rem;
+    right:3rem;
+    background: rgba(7, 44, 96, 0.3);
+    border-radius: rgba(255,255,255,0.3);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap:2.5rem;
+    text-align: center;
+    height: 0;
+    display: none;
+    transition: height 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown-menu.open{
+    height:170px;
+    display: flex;
+}
+.xmark {
+    display:none;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color:#1560d8;
+    padding-left:1rem;
+    width:48px;
+    height: 48px;
 }
 
 @media  screen  and (max-width: 1050px){
@@ -101,4 +151,10 @@ header{
     flex:6;
    }
    
+}
+@media screen and (max-width:576px) {
+    .dropdown-menu{
+        left: 1rem;
+        width:unset;
+    }
 }

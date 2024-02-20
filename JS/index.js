@@ -1,3 +1,22 @@
+// for responsive header
+const togglebtn=document.querySelector(".toggle-btn");
+const togglebtnIcon = document.querySelector(".humburger")
+const dropDownMenu= document.querySelector(".dropdown-menu");
+
+togglebtn.onclick=function(){
+    dropDownMenu.classList.toggle('open');
+    const isOpen =dropDownMenu.classList.contains('open');
+    if(isOpen){
+        document.getElementById('xmark').style.display='block';
+        document.getElementById('humburger').style.display='none';
+    }
+    else{
+        document.getElementById('xmark').style.display='none';
+        document.getElementById('humburger').style.display='flex';
+    }
+
+}
+
 // for starting components
 const pageLoadFadeUpAll =document.querySelectorAll(".page-load-up")
 document.addEventListener("DOMContentLoaded", function() {

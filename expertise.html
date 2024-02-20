@@ -18,34 +18,45 @@
     </head>
 <body>
 
-    <!-- header section -->
+    <!-- Header section-->
     <header class="header" >
-        <div class="logo">
-            <img src="./Resources/logo.webp" alt="company logo">
-        </div>
-        
-        <div class="header-right">
-            <div class="navbar">
-                <ul class="navbar-components">
-                    <li><a href="/">About</a></li>
-                    <li><a href="">Our expertise</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>
+        <div class="main-bar">
+            <div class="logo">
+                <a href="/"><img src="./Resources/logo.webp" alt="company logo"></a>
             </div>
-            <div class="h-right-icons">
-                <img src="./Resources/svg/linkedin.svg" alt="" class="linkedin-logo">
-                <div class="humburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+            
+            <div class="header-right">
+                <div class="navbar">
+                    <ul class="navbar-components">
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="./expertise.html">Our expertise</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="h-right-icons">
+                    <img src="./Resources/svg/linkedin.svg" alt="" class="linkedin-logo">
+                    <div class="toggle-btn">
+                        <div class="xmark" id="xmark">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <div class="humburger" id="humburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="dropdown-menu">
+            <li><a href="/about.html">About</a></li>
+            <li><a href="./expertise.html">Our expertise</a></li>
+             <li><a href="./contact.html">Contact</a></li>
         </div>
 
        
     </header>
-
     <!-- header section end -->
 
 
@@ -78,8 +89,8 @@
 
         <!-- faq section -->
         <section class="expertise-faq">
-            <h2>EXCHANGES AND OBSERVATION <br>
-                <span>FOR A COHERENT ACTION PLAN</span>
+            <h2><span>EXCHANGES AND OBSERVATION </span><br>
+                FOR A COHERENT ACTION PLAN
                </h2>
             <div class="faq-container">
                 <div class="accordion">
