@@ -13,10 +13,10 @@
 }
 
 body{
-    margin: 0;
+    margin: 0 auto;
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
+   
 }
 .about{
     justify-content: center;
@@ -39,7 +39,7 @@ body{
 }
 .consultants h1{
     font-family: var(--heading-font);
-    font-size: 1.9rem;
+    font-size: 2.1rem;
     word-spacing: 2px;
     color: var(--heading);
 }
@@ -128,10 +128,10 @@ body{
 .trs-wrapper{
     width: 90vw;
     margin:0 auto;
-    padding: 2rem 0;
+    padding: 4rem 0;
 }
 .trs-upper h1{
-    font-size: 1.9rem;
+    font-size: 2.1rem;
     color: var(--heading-color);
     font-family: var(--heading-font);
 
@@ -166,9 +166,10 @@ body{
 }
 .Trs-descrip h2{
     font-family: var(--heading-font);
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     color: var(--heading-color);
     margin-bottom: 0;
+    margin-top: 4rem;
 }
 .Trs-descrip p{
     font-size: 16px;
@@ -190,6 +191,7 @@ body{
 }
 
 .trs-points-details{
+    margin-top: 4rem;
     display: flex;
     gap:4rem;
     justify-content: center;
@@ -375,11 +377,18 @@ body{
 
 /* -----------------About Opearations------------------------ */
 .about-ops{
-    width:90vw;
-    margin:0 auto;
+    margin-bottom:6rem
 }
 .operation{
     padding-bottom:3rem;
+}
+.operation-inner{
+    background: #E3E1D9;
+    padding: 4rem 0;
+}
+.ops-color-change{
+    width:90vw;
+    margin:0 auto;
 }
 .operation h1{
     font-family: var(--heading-font);
@@ -444,4 +453,96 @@ body{
     object-fit: cover;
     border-top-left-radius: 30%;
     border-bottom-right-radius: 30%;
+}
+.about-faq-ops{
+    margin-top:5rem;
+}
+
+/* ------------responsive */
+@media screen and (min-width:768px) {
+    .consultant-img img, .trs-img img, .imp-step2 img, .operation-img img{
+        height:20rem;
+        
+    }
+    .about-faq{
+        max-width: 80vw;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .consultant-img img, .trs-img img, .imp-step2 img, .operation-img img{
+        width:90%;
+        border-top-left-radius: 10rem;
+        border-bottom-right-radius: 10rem;
+        
+    }
+    .about-faq{
+        max-width: 80vw;
+    }
+}
+@media screen and (min-width:1050px) {
+    .consultant-content,.trs-content,.operation-content{
+        flex-direction: row-reverse;
+        align-items: center;
+
+    }
+    .consultant-img{
+        flex:1;
+        width: 70%;
+    }
+    .consultant-text{
+        flex:1;
+        line-height:1.7rem;
+        font-size:1.1rem;   
+    }
+    .trs-img{
+        flex: 1;
+        width: 100%;
+    }
+    .trs-text{
+        flex: 1;
+        font-size: 0.95rem;
+    }
+    .trs-lower-img img{
+        width: 70%;
+        height: 70%;
+    }
+    .about-faq{
+        max-width: 70vw;
+    }
+    .operation-text{
+        flex: 1;
+    }
+    .operation-img{
+        flex: 1;
+    }
+    .imp-step2 img{
+        margin-top:2rem ;
+    }
+    
+}
+@media screen and (min-width:1300px) {
+    .about-company,.trs-wrapper{
+        width: 70vw;
+    }
+    .consultant-content,.trs-content,.operation-content{
+        /* margin-top: -3rem; */
+        gap:2rem
+    }
+    .about-faq{
+        width: 50vw;
+    }
+    .trs-lower-img{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .ops-upper-section{
+        width: 80vw;
+        margin: 0 auto;
+    }
+    .improvement-process{
+        margin-top: 2rem;
+        width: 70vw;
+        margin:2rem auto;
+    }
 }

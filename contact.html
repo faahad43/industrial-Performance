@@ -59,70 +59,73 @@
      <!-- contact us section -->
 
     <section class="contact-section">
-        <div class="contact-title">
+        <div class="contact-title page-load-down fade-down">
             <h1>Contact Us</h1>
             <p>
                 POUR UNE RÉPONSE RAPIDE À TOUTES VOS QUESTIONS
             </p>
         </div>
         <div>
-            <div class="contact">
-                <div class="contact-side">
-                    <h2>Need Support</h2>
-                     <p>Feel free to us your message</p>
+            <div class="contact-wrapper">
+                <div class="contact page-load-left fade-left">
+                    <div class="contact-side">
+                        <h2>Need Support</h2>
+                         <p>Feel free to us your message</p>
+                    </div>
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+    
+                        <input type="hidden" name="access_key" value="ecd19571-9974-43fe-9e71-f2472e5bf229">
+    
+                        <input type="text" name="Name" class="name" placeholder="Your name" required/>
+    
+                        <input type="text" name="First name" class="first-name" placeholder="First Name" required/>
+    
+                        <input type="text" name="Business" class="business" placeholder="Business" required>
+    
+                        <input type="email" name="Email" class="email" placeholder="Email" required/>
+    
+                        <input type="tel" name="phone Number" class="phone-no" placeholder="Phone Number" required/>
+    
+                        <select name="Fucntion" id="" class="function" placeholder="Function" required>
+                            <option value="" disabled selected>Fucntion</option>
+                            <option value="1">Directeur industrial</option>
+                            <option value="2">Directeur des operation</option>
+                            <option value="3">Directeur des site industrial</option>
+                            <option value="4">Gerant</option>
+                            <option value="5">Autre</option>
+                        </select>
+    
+                        <select name="Effective" id="effective" class="effective" placeholder="Effective" required>
+                            <option value="" disabled selected>Effective</option>
+                            <option value="1-19">1-19</option>
+                            <option value="20-49">20-49</option>
+                            <option value="50-99">50-99</option>
+                            <option value="100-500">100-500</option>
+                            <option value="500 +"> >500 +</option>
+                        </select>
+    
+                        <textarea name="Message" id="" placeholder="Enter your message here" required></textarea>
+    
+                        <label class="checkbox">
+                            <input type="checkbox" id="checkox" class="check" required>
+                            <span for="checkbox" class="check-label">J'ai pris connaissance de la politique de gestion des données personnelles décrite dans les mentions légales et j'autorise Valoy Conseil a m'envoyer des informations en relation avec les produits et les services de l'entreprise.</span>
+                        </label>
+    
+                        <button type="submit" value="submit" class="form-submit" style="outline: none;
+                        border:0;">Submit</button>
+                    </form>
                 </div>
-                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-
-                    <input type="hidden" name="access_key" value="ecd19571-9974-43fe-9e71-f2472e5bf229">
-
-                    <input type="text" name="Name" class="name" placeholder="Your name" required/>
-
-                    <input type="text" name="First name" class="first-name" placeholder="First Name" required/>
-
-                    <input type="text" name="Business" class="business" placeholder="Business" required>
-
-                    <input type="email" name="Email" class="email" placeholder="Email" required/>
-
-                    <input type="tel" name="phone Number" class="phone-no" placeholder="Phone Number" required/>
-
-                    <select name="Fucntion" id="" class="function" placeholder="Function" required>
-                        <option value="" disabled selected>Fucntion</option>
-                        <option value="1">Directeur industrial</option>
-                        <option value="2">Directeur des operation</option>
-                        <option value="3">Directeur des site industrial</option>
-                        <option value="4">Gerant</option>
-                        <option value="5">Autre</option>
-                    </select>
-
-                    <select name="Effective" id="effective" class="effective" placeholder="Effective" required>
-                        <option value="" disabled selected>Effective</option>
-                        <option value="1-19">1-19</option>
-                        <option value="20-49">20-49</option>
-                        <option value="50-99">50-99</option>
-                        <option value="100-500">100-500</option>
-                        <option value="500 +"> >500 +</option>
-                    </select>
-
-                    <textarea name="Message" id="" placeholder="Enter your message here" required></textarea>
-
-                    <label class="checkbox">
-                        <input type="checkbox" id="checkox" class="check" required>
-                        <span for="checkbox" class="check-label">J'ai pris connaissance de la politique de gestion des données personnelles décrite dans les mentions légales et j'autorise Valoy Conseil a m'envoyer des informations en relation avec les produits et les services de l'entreprise.</span>
-                    </label>
-
-                    <button type="submit" value="submit" class="form-submit" style="outline: none;
-                    border:0;">Submit</button>
-                </form>
-            </div>
-
-            <div class="maps-container">
-                <div class="mapbg"></div>
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2667.813599149493!2d2.711736176182708!3d48.03662677123256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e57f070ec5f35b%3A0x9915d36feeeedc63!2sValoy%20Conseil%20-%20Conseil%20en%20performance%20industrielle!5e0!3m2!1sen!2s!4v1708347448964!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+                <div class="maps-container page-load-right fade-right">
+                    <div class="mapbg"></div>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2667.813599149493!2d2.711736176182708!3d48.03662677123256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e57f070ec5f35b%3A0x9915d36feeeedc63!2sValoy%20Conseil%20-%20Conseil%20en%20performance%20industrielle!5e0!3m2!1sen!2s!4v1708347448964!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
+            
 
-            <div class="contact-method">
+            <div class="contact-method page-load-up fade-up">
                 <div class="method">
                     <i class="fa-solid fa-location-dot contact-icon"></i> 
                     <article class="text">
@@ -158,6 +161,58 @@
         
 
     </section>
+     <!-- Footer section -->
+     <footer class="footer">
+			
+		<div id="navigation" class="flex footer-left">
+            <div>
+                <strong class="title">Plan du site</strong>
+			<nav>
+				<ul>
+					<li><a href="https://www.valoy-conseil.fr">Accueil</a></li>
+					<li><a href="a-propos">A propos</a></li>
+					<li><a href="blog">Blog</a></li>
+					<li><a href="contact">Contact</a></li>
+				</ul>
+			</nav>
+            </div>
+			<nav class="last">
+				<a href="nos-expertises">Nos expertises</a>
+				<ul>
+					<li style="color:#e83a00"><a href="expertise/le-diagnostic">Le diagnostic</a></li>
+					<li style="color:#d23845"><a href="expertise/le-plan-d-accompagnement">Le plan d’accompagnement</a></li>
+					<li style="color:#b12f63"><a href="expertise/le-chantier-quick-win">Le chantier Quick Win</a></li>
+					<li style="color:#70229b"><a href="expertise/le-coaching-operationnel">Le coaching opérationnel</a></li>
+					<li style="color:#4c1ab6"><a href="expertise/une-vraie-demarche">Une vraie démarche</a></li>
+					<li style="color:#2d20ca"><a href="expertise/un-outil-connecte-performant">Un outil connecté performant </a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div id="social_legals" class="flex footer-right">
+            <div class="footer-right-inner">
+                <div id="social" class="flex fxje" style="display:flex; flex-direction:column;">
+                    <strong class="title">Suivez-nous</strong>
+                    <a href="https://www.linkedin.com/company/valoy-conseil/?originalSubdomain=fr" target="_blank" rel="external" class="flex fxjc fxac"><img src="./Resources/svg/linkedin.svg" alt="" class="linkedin-logo-footer"></a>
+                </div>
+                <div id="contact_footer" class="flex fxje">
+                    <strong class="title">Recontrons-nous</strong>
+                    <p><a href="https://www.google.com/maps?ll=48.037247,2.71376&amp;z=14&amp;t=m&amp;hl=fr&amp;gl=FR&amp;mapclient=embed&amp;cid=11030955340017359971">83, rue du 8 Mai<br>45120 Corquilleroy</a></p>
+                    <p><span id="e384764560"><a href="tel:0660815649">06 . 60 . 81 . 56 . 49</a></span>
+                <script>var txt0='<a '; var txt1='hre'; var txt2='f="'; var txt3='tel'; var txt4=':06'; var txt5='608'; var txt6='156'; var txt7='49"'; var txt8='>06'; var txt9=' . '; var txt10='60 '; var txt11='. 8'; var txt12='1 .'; var txt13=' 56'; var txt14=' . '; var txt15='49<'; var txt16='/a>'; document.getElementById("e384764560").innerHTML=txt0+txt1+txt2+txt3+txt4+txt5+txt6+txt7+txt8+txt9+txt10+txt11+txt12+txt13+txt14+txt15+txt16;</script></p>
+                    <p><span id="e67266140"><a href="mailto:luis.valoy@valoy-conseil.fr">luis.valoy@valoy-conseil.fr</a></span>
+                <script>var txt0='<a hr'; var txt1='ef="m'; var txt2='ailto'; var txt3=':luis'; var txt4='.valo'; var txt5='y@val'; var txt6='oy-co'; var txt7='nseil'; var txt8='.fr">'; var txt9='luis.'; var txt10='valoy'; var txt11='@valo'; var txt12='y-con'; var txt13='seil.'; var txt14='fr</a'; var txt15='>'; document.getElementById("e67266140").innerHTML=txt0+txt1+txt2+txt3+txt4+txt5+txt6+txt7+txt8+txt9+txt10+txt11+txt12+txt13+txt14+txt15;</script></p>
+                </div>
+            </div>
+			<div id="legals">
+				2024 © Valoy Conseil - Design graphique &amp; Développement : <a href="https://www.madeforyou-agency.com/" target="_blank" rel="external">Made for you</a>
+			</div>
+
+		</div>
+
+	</footer>
+
+    <!-- Footer section end -->
 
     <script src="https://web3forms.com/client/script.js" async defer></script>
    <script src="./JS/index.js"></script>

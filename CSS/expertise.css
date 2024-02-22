@@ -59,7 +59,7 @@ body{
     max-width: 95vw;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 6rem auto;
 }
 .expertise-faq h2{
     color: var(--heading);
@@ -137,4 +137,55 @@ body{
     transition: all 0.5s ease-in;
     max-height: 0;
     overflow: hidden;
+}
+@media screen and (min-width:820px){
+    .expertise-faq{
+        width: 800px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .diagnosis-img img{
+        height:20rem;
+        
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .diagnosis-img img{
+        width:90%;
+        border-top-left-radius: 10rem;
+        border-bottom-right-radius: 10rem;
+        
+    }
+    .about-faq{
+        max-width: 80vw;
+    }
+}
+@media screen and (min-width:1050px) {
+    .diagnosis-content{
+        flex-direction: row-reverse;
+        align-items: center;
+
+    }
+    .diagnosis-img{
+        flex: 1;
+        width: 100%;
+    }
+    .diagnosis-text{
+        flex: 1;
+        font-size: 0.95rem;
+    }
+    
+}
+@media screen and (min-width:1300px) {
+    .expertise{
+        width: 70vw;
+    }
+    .diagnosis-content,.trs-content,.operation-content{
+        /* margin-top: -3rem; */
+        gap:2rem
+    }
+
 }

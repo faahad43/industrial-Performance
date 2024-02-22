@@ -21,8 +21,10 @@ header{
     transition:background-color 0.4s ease-in-out;
     position: fixed;
     top:0; 
-    width: 97%;
+    width: 97vw;
     z-index: 999;
+    /* overflow-x:hidden !important; */
+    /* padding-right: 0; */
 }
 .main-bar{
     display: flex;
@@ -60,9 +62,12 @@ header{
 }
 .navbar-components a{
     text-decoration: none;
-    color:#fff;
+    color:#2f3742;
     font-weight: 500;
     transition: .5s ease;
+}
+.index-navbar a{
+    color:#fff
 }
 .navbar-components a:hover{
     font-size:1.1rem ;
